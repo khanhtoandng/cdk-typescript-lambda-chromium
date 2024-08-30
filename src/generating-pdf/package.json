@@ -1,0 +1,21 @@
+{
+  "name": "generating-pdf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "npm install",
+    "build": "tsc",
+    "package": "npm prune --production && cp -R node_modules lib/node_modules/"
+  },
+  "author": "Toan Huynh",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.637.0",
+    "@aws-sdk/s3-request-presigner": "^3.637.0",
+    "puppeteer-core": "^23.2.0"
+  },
+  "devDependencies": {
+    "@sparticuz/chromium": "^127.0.0"
+  }
+}
