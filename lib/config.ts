@@ -33,10 +33,6 @@ export class Config {
   getChromiumLayerArn(): string {
     return this.chromiumLayerArn
   }
-
-  private capitalizeFirstLetter(str: string) {
-    return str.charAt(0).toUpperCase() + str.slice(1)
-  }
 }
 
 export const config = new Config()
